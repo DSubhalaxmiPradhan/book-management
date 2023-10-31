@@ -113,3 +113,12 @@ Base URL: `http://localhost:3039`
     "message": "Book Deleted Successfully"
   }
 
+# Conclusion
+1. Clone the project
+
+2. Install the packages
+   - npm i
+
+3. Run the project
+   - npm start
+
