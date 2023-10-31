@@ -1,0 +1,142 @@
+{
+	"info": {
+		"_postman_id": "638e1547-bb85-4282-940e-77cc6667355a",
+		"name": "bookManagement",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28460336",
+		"_collection_link": "https://orange-shadow-858590.postman.co/workspace/Prince-college~05da47a6-b741-4ea9-9827-324fb2759dce/collection/28460336-638e1547-bb85-4282-940e-77cc6667355a?action=share&source=collection_link&creator=28460336"
+	},
+	"item": [
+		{
+			"name": "Book",
+			"item": [
+				{
+					"name": "add Book",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"heal yourself\",\r\n    \"author\":\"lwis\",\r\n    \"summary\":\"A journey to healing\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3039/api/book/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3039",
+							"path": [
+								"api",
+								"book",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit book",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"heal yourself 007\",\r\n    \"author\": \"lwis\",\r\n    \"summary\": \"A journey to healing\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3039/api/book/update/65411d75b8e7375c42f948ea",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3039",
+							"path": [
+								"api",
+								"book",
+								"update",
+								"65411d75b8e7375c42f948ea"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get Book Details By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3039/api/book/getDetails/65411d75b8e7375c42f948ea",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3039",
+							"path": [
+								"api",
+								"book",
+								"getDetails",
+								"65411d75b8e7375c42f948ea"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "book list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3039/api/book/list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3039",
+							"path": [
+								"api",
+								"book",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete book",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3039/api/book/delete/6540e79cd4c17a1cec476521",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3039",
+							"path": [
+								"api",
+								"book",
+								"delete",
+								"6540e79cd4c17a1cec476521"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
