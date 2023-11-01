@@ -117,8 +117,8 @@ Base URL: `http://localhost:3039`
 1. Clone the project
 
 2. Install the packages
-   - npm i
+   -  `command : npm i`
 
 3. Run the project
-   - npm start
+   - `command : npm start`
 
